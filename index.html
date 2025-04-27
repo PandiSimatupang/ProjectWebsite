@@ -11,28 +11,44 @@
       margin: 0;
       padding: 20px;
     }
+    .listOfRecipe {
+      background: lightgreen;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      padding: 20px;
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
     .recipe {
       background: white;
       border-radius: 10px;
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
       margin-bottom: 20px;
       padding: 20px;
-      overflow: hidden;
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
     }
     .recipe img {
-      width: 100%;
-      height: auto;
+      width: auto;
+      height: 300px;
       border-radius: 10px;
+      object-fit: cover;
     }
-    .recipe h2 {
-      margin-top: 10px;
+    .recipe-content {
+      flex: 1;
+    }
+    .recipe-content h2 {
+      margin-top: 0;
       font-size: 24px;
     }
-    .recipe .time {
+    .time {
       color: #888;
       font-size: 14px;
     }
-    .recipe ul {
+    ul {
       list-style-type: disc;
       margin: 10px 0;
       padding-left: 20px;
@@ -41,37 +57,69 @@
 </head>
 <body>
 
-  <h1>🍴 My Cooking Library</h1>
+  <h1>My Cooking Library</h1>
+    <div class="listOfRecipe">
+        <h2>List of Recipea:</h2>
+            <ul>
+                <li><a href="#spaghetti_cabonara">Spaghetti Carbonara</a></li>
+                <li><a href="#chicken_curry">Chicken Curry</a></li>
+                <li><a href="#chicken_satai">Chicken Satai</a></li>
+                
+            </ul>
+    </div>
 
   <div class="recipe">
-    <img src="https://via.placeholder.com/600x400" alt="Recipe Photo">
-    <h2>Spaghetti Carbonara</h2>
-    <p class="time">⏱️ Cook time: 25 minutes</p>
-    <h3>Ingredients:</h3>
-    <ul>
-      <li>Spaghetti pasta</li>
-      <li>Eggs</li>
-      <li>Pancetta or bacon</li>
-      <li>Parmesan cheese</li>
-      <li>Black pepper</li>
-    </ul>
+    <img src="pinar-kucuk-QuFm328PV88-unsplash.jpg" alt="Spaghetti Carbonara">
+    <div class="recipe-content">
+      <h2 id="spaghetti_cabonara">Spaghetti Carbonara</h2>
+      <p class="time">Cook time: 25 minutes</p>
+      <h3>Ingredients:</h3>
+      <ul>
+        <li>Spaghetti pasta</li>
+        <li>Eggs</li>
+        <li>Pancetta or bacon</li>
+        <li>Parmesan cheese</li>
+        <li>Black pepper</li>
+      </ul>
+    </div>
   </div>
 
   <div class="recipe">
-    <img src="https://via.placeholder.com/600x400" alt="Recipe Photo">
-    <h2>Chicken Curry</h2>
-    <p class="time">⏱️ Cook time: 40 minutes</p>
-    <h3>Ingredients:</h3>
-    <ul>
-      <li>Chicken</li>
-      <li>Coconut milk</li>
-      <li>Curry powder</li>
-      <li>Onions</li>
-      <li>Garlic and ginger</li>
-    </ul>
+    <img src="chicken-curry-yoav-aziz-i7IcViKHK90-unsplash.jpg" alt="Chicken Curry">
+    <div class="recipe-content">
+      <h2 id="chicken_curry">Chicken Curry</h2>
+      <p class="time">Cook time: 40 minutes</p>
+      <h3>Ingredients:</h3>
+      <ul>
+        <li>Chicken</li>
+        <li>Coconut milk</li>
+        <li>Curry powder</li>
+        <li>Onions</li>
+        <li>Garlic and ginger</li>
+      </ul>
+    </div>
   </div>
 
-  <!-- You can add more recipes the same way! -->
+
+  
+  <div class="recipe">
+    <img src="satai-r-eris-LuBREV-wIik-unsplash.jpg" alt="Chicken Curry">
+    <div class="recipe-content">
+      <h2 id="chicken_satai">Chicken Satai</h2>
+      <p class="time">Cook time: 40 minutes</p>
+      <h3>Ingredients:</h3>
+      <ul>
+        <li>Chicken (500g)</li>
+        <li>Soy sauce</li>
+        <li>Fish sauce</li>
+        <li>Brown sugar</li>
+        <li>Garlic</li>
+        <li>Turmeric</li>
+      </ul>
+    </div>
+  </div>
+
+
 
 </body>
 </html>
